@@ -10,6 +10,7 @@ public class WelcomeController {
 	@GetMapping("/welcome")
 	public String welcome(Model model)
 	{
+		System.out.println("This is welcome() method");
 		model.addAttribute("msg", "Welcome to Spring Boot..!!");
 		return "index";
 	}
